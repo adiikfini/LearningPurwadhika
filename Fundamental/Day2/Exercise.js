@@ -1,4 +1,4 @@
-let number = 4;
+let number = 6;
 // ● Write a code to check whether the number is odd or even
 // ○ Example: 25 → odd number, 2 → even number
 console.log("Soal1");
@@ -25,7 +25,7 @@ if (number <= 1){ //validasi tidak nol dan negatif
 }
 console.log("\nSoal2");
 
-console.log(`\n${number} → ${A}`);
+console.log(`${number} → ${A}`);
 
 
 // ● Write a code to find the sum of the numbers 1 to N
@@ -36,7 +36,7 @@ let bag=0;
 for(let i=1; i<= number ; i++){
     bag = bag + i;
 }
-console.log(`\n${bag}`);
+console.log(`${bag}`);
 
 // ● Write a code to find factorial of a number
 // ○ Example: 4! → 4 x 3 x 2 x 1 = 24
@@ -45,11 +45,11 @@ bag=1;
 console.log("\nSoal4");
 for (let index = 1; index <= number ; index++) {
     bag = bag * index;
-    console.log(bag);
 }
+console.log(bag);
 // ● Write a code to print the first N fibonacci numbers
 // ○ Example: 15 → 610
-
+console.log("\nSoal5");
 let arr = [];
 if (number <= 0){
     arr = [];
