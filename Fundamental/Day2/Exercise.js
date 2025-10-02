@@ -12,12 +12,39 @@ if(number % 2 == 0){
 // ● Write a code to check whether the number is prime number or not
 // ○ Example: 7 → 7 is a prime number
 // ○ Example: 6 → 6 is not a prime number
+
+/*
+Psudocode
+Declare
+Variable A, num integer
+
+Assign
+A = "is a prime number"
+num = 7
+
+Prosses
+if (num <= 1) then 
+    A = "is not a prime number"
+enle
+    for i = 2 to Math.sqrt(num) do 
+        if (num % i == 0) then
+            A = "is not a prime number"
+            break
+        end if
+    end for
+end if
+
+Output
+print (num, " → ", A)
+
+*/
 let A ="is a prime number"
-if (number <= 1){ //validasi tidak nol dan negatif
+let num = 7;
+if (num <= 1){ //validasi tidak nol dan negatif
     A ="is not a prime number";
 }else{
-    for(let i = 2;i<=Math.sqrt(number);i++){ //looping angka habis oleh i
-        if (number % i === 0){ 
+    for(let i = 2;i<=Math.sqrt(num);i++){ //looping angka habis oleh i
+        if (num % i === 0){ 
             A ="is not a prime number";
             break;
         }
@@ -25,7 +52,7 @@ if (number <= 1){ //validasi tidak nol dan negatif
 }
 console.log("\nSoal2");
 
-console.log(`${number} → ${A}`);
+console.log(`${num} → ${A}`);
 
 
 // ● Write a code to find the sum of the numbers 1 to N
