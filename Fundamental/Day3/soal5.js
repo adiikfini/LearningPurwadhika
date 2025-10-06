@@ -1,10 +1,3 @@
-const input = "Hello World";
-const search1 = "ello W";
-
-const output = input.replace(search1, '')
-console.log(`delete some searched words: ${output}`);
-
-
 let mainString = "Hello World";
 let search = "ell";
 let result = "";
@@ -35,5 +28,15 @@ if (found !== -1) {
 }else{
     result = mainString;
 }
+console.log(`input: ${mainString}`);
+console.log(`search: ${search}`);
 
-console.log(result);
+console.log(`result: ${result}`);
+
+//alt solusion
+const input = "Hello World";
+const search1 = "ello W";
+
+const output = input.replace(search1, '')
+console.log(`\nalt solusion`);
+console.log(`result: ${output}`);
