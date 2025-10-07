@@ -166,6 +166,5 @@ const splitAString = function (word) {
     }
     resultWord.push(currentWord)
     return resultWord;
-
 }
 console.log(splitAString("Hello World"));

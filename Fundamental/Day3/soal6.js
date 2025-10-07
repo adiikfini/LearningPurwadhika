@@ -12,9 +12,9 @@ for (let i = 0; i < text.length; i++) {
     if (capitalize && char !== "") {
 
         // ubah ke huruf besar
-        let code = char.charCodeAt(0)
+        let code = char.charCodeAt(0);
         if (code >= 97 && code <= 122) {
-            char = String.fromCharCode(code - 32) // ubah ke uppercase lewat table ascii
+            char = String.fromCharCode(code - 32); // ubah ke uppercase lewat table ascii
         }
 
         capitalize = false
