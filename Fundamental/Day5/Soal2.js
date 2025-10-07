@@ -9,8 +9,14 @@ function concatenating(arr) {
     }
 
     if (arr.length === 1){
-        return arr[0]
+        return arr[0];
     }
+
+    const lastArr = arr[arr.length -1];//last array
+    const otherArr = arr.slice(0, -1); //without last array
+    const joinedOthers = otherArr.join(", ");
+
+    return `${joinedOthers} and ${lastArr}`;
 }
 
 console.log(concatenating(arr));
