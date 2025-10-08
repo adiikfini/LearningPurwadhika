@@ -37,5 +37,47 @@ function  findDifferenceArray(arr1, arr2) {
     }
     return loot;
 }
-console.log(findDifferenceArray(arr1, arr2));
 
+
+//alt code
+function FDM(arr1,arr2) {
+    const difference = [];
+    for (const element1 of arr1) {
+        let found = false;
+        for (const element2 of arr2) {
+            if (element1 === element2) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            difference.push(element1);
+        }
+    }
+
+    for (const element2 of arr2) {
+        let found = false;
+        for (const element1 of arr1) {
+            if (element2 === element1) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            difference.push(element2);
+        }
+    }
+
+    return difference;
+}
+
+//alf code with method
+function findDifferenceModern(params) {
+    const diff1 = arr1.filter(element => !arr2.includes(element));
+    const diff2 = arr2.filter(element => !arr1.includes(element));
+    return [...diff1, ...diff2];
+}
+
+console.log(findDifferenceArray(arr1, arr2)); //statis
+console.log(FDM(arr1,arr2)); //dinamis
+console.log(findDifferenceModern(arr1,arr2)); //dinamis
