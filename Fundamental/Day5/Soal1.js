@@ -17,7 +17,7 @@ function MinMaxAvg(arr) {
         avg = avg + arr[index];
     }
     avgResult = avg / arr.length;
-    console.log(`Min= ${min} Max= ${max} Avg= ${avgResult}`);
+    console.log(`Min= ${min} Max= ${max} Avg= ${avgResult.toFixed(2)}`);
     
     
 }
