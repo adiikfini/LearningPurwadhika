@@ -10,3 +10,4 @@ function isPalindrome(s: string): boolean {
 
 let s = "A man, a plan, a canal: Panama"
 console.log(isPalindrome(s));
+
