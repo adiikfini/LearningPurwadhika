@@ -16,7 +16,7 @@ Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome. */
 
-function isPalindrome(x: number): boolean {
+function isPalindrome1(x: number): boolean {
     let Xstr: string = x.toString();
     let temp: string = "";
     let result: boolean = false;
@@ -31,5 +31,5 @@ function isPalindrome(x: number): boolean {
     return result;
 };
 
-console.log(isPalindrome(111));
+console.log(isPalindrome1(111));
 
